@@ -15,7 +15,6 @@
 
  [文档](https://doc.xugaoyi.com/)  |
  [效果](https://xugaoyi.com/)  |
- [本仓库的gitee镜像](https://gitee.com/xugaoyi/vuepress-theme-vdoing)
 
 
 ## 介绍
@@ -24,12 +23,15 @@
 3. 博客功能提供一种知识的`碎片化`形态，并支持个性化博客配置。
 4. `简洁高效`，以 Markdown 为中心的项目结构。内置自动化工具，以更少的配置完成更多的事。配合多维索引快速定位每个知识点。
 
+## 上新推荐 🎉
+* `v1.2.x`：这个版本对整体的UI细节做了很多优化，比如标签栏和分类栏等 (2020.06.09)
+* `v1.1.x`：从这个版本开始主题新增了两个`超好用`、`高颜值`的Markdown容器，快去 [体验](https://xugaoyi.github.io/vuepress-theme-vdoing-doc/pages/d0d7eb) 吧~ (2020.05.29)
 
 ## 这个主题可以做什么？
 * 案例1：[知识库兼博客站](https://xugaoyi.com/)
 * 案例2：[仅博客站](https://xugaoyi.github.io/vdoing-demo-blog/)
 * 案例3：[仅知识库](https://xugaoyi.github.io/vdoing-demo-repository/)
-* 案例4：[文档站](https://doc.xugaoyi.com/)
+* 案例4：[文档站](https://xugaoyi.github.io/vuepress-theme-vdoing-doc/)
 
 
 ## 快速上手
