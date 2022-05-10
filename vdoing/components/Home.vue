@@ -1,18 +1,18 @@
 <template>
-  <div class="home-wrapper">
+  <div class="home-wrapper" style="margin-top: 115px">
     <!-- banner块 s -->
-    <div
+<!--    <div
       class="banner"
       :class="{ 'hide-banner': !showBanner }"
       :style="bannerBgStyle"
-    >
-      <div
+    >-->
+<!--      <div
         class="banner-conent"
         :style="
           !homeData.features && !homeData.heroImage && `padding-top: 7rem`
         "
-      >
-        <header class="hero">
+      >-->
+<!--        <header class="hero">
           <img
             v-if="homeData.heroImage"
             :src="$withBase(homeData.heroImage)"
@@ -27,10 +27,10 @@
           <p class="action" v-if="homeData.actionText && homeData.actionLink">
             <NavLink class="action-button" :item="actionLink" />
           </p>
-        </header>
+        </header>-->
 
         <!-- PC端features块 s -->
-        <div class="features" v-if="hasFeatures && !isMQMobile">
+<!--        <div class="features" v-if="hasFeatures && !isMQMobile">
           <div
             class="feature"
             v-for="(feature, index) in homeData.features"
@@ -57,13 +57,13 @@
               <p>{{ feature.details }}</p>
             </a>
           </div>
-        </div>
+        </div>-->
         <!-- PC端features块 e -->
-      </div>
+<!--      </div>-->
 
       <!-- 移动端features块 s -->
       <!-- isMQMobile放到v-if上线后会报错 -->
-      <div class="slide-banner" v-if="hasFeatures" v-show="isMQMobile">
+<!--      <div class="slide-banner" v-if="hasFeatures" v-show="isMQMobile">
         <div class="banner-wrapper">
           <div class="slide-banner-scroll" ref="slide">
             <div class="slide-banner-wrapper">
@@ -104,9 +104,9 @@
             ></span>
           </div>
         </div>
-      </div>
+      </div>-->
       <!-- 移动端features块 e -->
-    </div>
+<!--    </div>-->
     <!-- banner块 e -->
 
     <MainLayout>
@@ -135,7 +135,7 @@
         <Content class="theme-vdoing-content custom card-box" />
       </template>
 
-      <template v-if="!homeData.hideRightBar" #mainRight>
+<!--      <template v-if="!homeData.hideRightBar" #mainRight>
         <BloggerBar v-if="$themeConfig.blogger" />
         <CategoriesBar
           v-if="
@@ -155,7 +155,7 @@
           v-if="homeSidebarB"
           v-html="homeSidebarB"
         ></div>
-      </template>
+      </template>-->
     </MainLayout>
   </div>
 </template>
@@ -216,7 +216,8 @@ export default {
         if (this.$themeConfig.bodyBgImg) { // 当有bodyBgImg时，不显示背景
           return ''
         } else { // 网格纹背景
-          return 'background: rgb(40,40,45) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=)'
+          return ''
+          //return 'background: rgb(40,40,45) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=)'
         }
       } else if (bannerBg === 'none') { // 无背景
         if (this.$themeConfig.bodyBgImg) {

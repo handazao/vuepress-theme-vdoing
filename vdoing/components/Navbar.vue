@@ -6,7 +6,7 @@
       :to="$localePath"
       class="home-link"
     >
-      <img
+<!--      <img
         class="logo"
         v-if="$site.themeConfig.logo"
         :src="$withBase($site.themeConfig.logo)"
@@ -17,7 +17,7 @@
         class="site-name"
         v-if="$siteTitle"
         :class="{ 'can-hide': $site.themeConfig.logo }"
-      >{{ $siteTitle }}</span>
+      >{{ $siteTitle }}</span>-->
     </router-link>
 
     <div
