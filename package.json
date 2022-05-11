@@ -4,17 +4,20 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "bash deploy.sh",
+    "upload": "node upload.server.js",
+    "publish": "vuepress build docs && node upload.server.js",
     "editFm": "node utils/editFrontmatter.js",
-    "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
-    "publish": "cd ./vdoing && npm publish && cd .. && yarn updateTheme",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D"
   },
   "license": "MIT",
   "devDependencies": {
     "dayjs": "^1.9.7",
+    "fs": "0.0.1-security",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
+    "ora": "1.2.0",
+    "scp2": "^0.5.0",
+    "ssh2": "^1.2.0",
     "vuepress": "1.9.5",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
