@@ -2,9 +2,9 @@
 title: nginx之二级域名配置
 date: 2022-05-27 14:41:09
 permalink: /pages/0abc14/
-sidebar: auto
 categories:
-  - Docker使用
+  - 技术
+  - Docker
 tags:
   - docker
 author: 
