@@ -1,0 +1,21 @@
+---
+title: ja-netfilter配置
+tags: 
+  - Tool
+categories: 
+  - Tool
+  - 技术
+author: 
+  name: handazao
+  link: https://github.com/handazao
+date: 2023-09-05 15:05:43
+permalink: /pages/14797f/
+---
+
+## 1.配置文件 exe.vmoptions
+
+```markdown
+-javaagent:D:/project/jetbra/ja-netfilter.jar=jetbrains
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+```
